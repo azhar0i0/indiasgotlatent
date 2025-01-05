@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="#episodes">Episodes</a>
+        </nav>
+    </header>
+
+    <div class="mainHomeFirstSection">
+        <div class="hero">
+            <h2>INDIA'S GOT <span class="textshadow">LATENT</span></h2> <br>
+            <h3>Celebrating India’s Hidden (and Often Hilarious) <br> Talents! on Your <span
+                    style="color: #FFEA00;">Favourite Pointless Reality Show</span></h3>
+            <br>
+            <button class="cta" id="exploreButton">MembersOnly</button> <br>
+        </div>
+        <div class="imagemc">
+            <img src="/673ec2d058c5d59a95618615_Group 31.png"
+                alt="">
+        </div>
+    </div>
+
+
+    <!-- Marquee Section -->
+    <div class="section-mid marquee-container">
+        <div class="marquee">
+            Welcome to IndiasGotLatent – Celebrating India's Hidden Talents! - 'Latent' is an ability that is hidden
+            deep inside.
+        </div>
+    </div>
+
+    <div class="section" id="episodes">
+        <h2>Featured Episodes</h2>
+        <div class="cards">
+            <div class="card"><a href="https://www.youtube.com/watch?v=pysQmeEYOJk">
+                    <img src="https://img.youtube.com/vi/pysQmeEYOJk/hqdefault.jpg" alt="Episode 01">
+                    <h3>INDIA'S GOT LATENT | EP 01 ft. @raftaarmusic</h3>
+                    <p>'Latent' is an ability that is hidden deep inside.</p>
+                </a>
+            </div>
+            <div class="card"><a href="https://www.youtube.com/watch?v=DLgcCTnMheg">
+                    <img src="https://img.youtube.com/vi/DLgcCTnMheg/hqdefault.jpg" alt="Episode 02">
+                    <h3>INDIA'S GOT LATENT | EP 02 ft. @GamerFleet @JokeSingh @KaranSinghMagic</h3>
+                    <p>'Latent' is an ability that is hidden deep inside.</p>
+                </a>
+            </div>
+            <div class="card"><a href="https://www.youtube.com/watch?v=xR_8_OHFo1k">
+                    <img src="https://img.youtube.com/vi/xR_8_OHFo1k/hqdefault.jpg" alt="Episode 03">
+                    <h3>INDIA'S GOT LATENT | EP 03 ft. Urfi Javed @ashishsolanki_1 @yashrajnt</h3>
+                    <p>'Latent' is an ability that is hidden deep inside.</p>
+                </a>
+            </div>
+            <div class="card"><a href="https://www.youtube.com/watch?v=Vsx9a7-IXX4">
+                    <img src="https://img.youtube.com/vi/Vsx9a7-IXX4/hqdefault.jpg" alt="Episode 04">
+                    <h3>INDIA'S GOT LATENT | EP 04 ft. @ComedianMaheepSingh @TandonAmit @neetipalta9490</h3>
+                    <p>'Latent' is an ability that is hidden deep inside.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Indias Got Latent | Built with passion. Follow us on <a href="#">Instagram</a>.</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle button click
+        document.getElementById('exploreButton').addEventListener('click', function () {
+            window.location.href = '/episodes.html'; // Make sure this path is correct
+        });
+
+
+        // Simple animation for cards
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.3)';
+            });
+            card.addEventListener('mouseout', () => {
+                card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+            });
+        });
+    </script>
+</body>
+
+</html>
